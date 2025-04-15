@@ -28,7 +28,20 @@
     color-scheme: dark;
   }
 }
+html,
+body {
+  cursor: url('public/assets/customCursor.svg') 8 8, auto;
+}
 
+/* Custom cursor for clickable elements */
+a,
+button,
+[role='button'],
+input[type='submit'],
+input[type='button'],
+input[type='reset'] {
+  cursor: url('public/assets/customCursor.svg') 8 8, auto !important;
+}
 html {
   min-width: 360px;
 }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="26" fill="none" viewBox="0 0 36 51">
+  <path fill="url(#a)" d="M0 0h36v51H0z"/>
+  <defs>
+    <pattern id="a" width="1" height="1" patternContentUnits="objectBoundingBox">
+      <use href="#b" transform="scale(.02778 .0196)"/>
+    </pattern>
+    <image id="b" width="36" height="51" data-name="Arrow2.png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAzCAYAAAD/06q7AAAAAXNSR0IArs4c6QAAAMZJREFUWIXtmUEOgCAMBFvj/7+MFxNcEiIEKHNgr1KY7MSD6GaWLMdtc67dAGVwQG6qrHwWHlxDOCBRllK25+7lupDgGsIBVZXJokB9uIZwQE3KZGCxPlxDOKBuZTK8QB+uIRzQkDLZaJI+XEM4oGnKZNMBfbiGcEBLlMkBnfpwDeGAliuTwxr04RrCAYUqk4Mr+nAN4YC2KROIjz5cQzige2S4eFOmBNcQDqhb2fmU3p0mZefCipSqsnMt/AYHdH6+/AUH9ABEritwc6ExEQAAAABJRU5ErkJggg==" preserveAspectRatio="none"/>
+  </defs>
+</svg>
