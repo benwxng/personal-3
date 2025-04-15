@@ -1,4 +1,8 @@
 import { BlogPosts } from "app/components/posts";
+import {
+  AnimatedHeading,
+  AnimatedContent,
+} from "app/components/animated-section";
 
 export const metadata = {
   title: "writings",
@@ -8,10 +12,10 @@ export const metadata = {
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
-        My Writings
-      </h1>
-      <BlogPosts />
+      <AnimatedHeading>My Writings</AnimatedHeading>
+      <AnimatedContent>
+        <BlogPosts />
+      </AnimatedContent>
     </section>
   );
 }
