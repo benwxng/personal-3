@@ -18,9 +18,10 @@ export default function AnimatedLink({
 }: AnimatedLinkProps) {
   const [isHovered, setIsHovered] = useState(false);
 
+  // Generate the appropriate props based on the external flag
   const linkProps = external
     ? { target: "_blank", rel: "noopener noreferrer" }
-    : {};
+    : {}; // Empty object for internal links
 
   return (
     <span
@@ -28,7 +29,12 @@ export default function AnimatedLink({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <a href={href} className={`${className}`} {...linkProps}>
+      <a
+        href={href}
+        className={`${className}`}
+        {...linkProps}
+        target={external ? "_blank" : undefined}
+      >
         {children}
       </a>
       <motion.div

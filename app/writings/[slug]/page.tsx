@@ -1,5 +1,6 @@
 import { formatDate, getBlogPosts } from "app/writings/utils";
 import { notFound } from "next/navigation";
+import { CustomMDX } from "app/components/mdx";
 
 export const baseUrl = "https://portfolio-blog-starter.vercel.app";
 
@@ -19,7 +20,8 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  let { title, publishedAt: publishedTime, description } = post.metadata;
+  let { title, publishedAt: publishedTime, summary } = post.metadata;
+  let description = summary;
   let ogImage = `${baseUrl}/writings/${post.slug}/og`;
 
   return {
@@ -65,7 +67,7 @@ export default function Writing({ params }) {
             headline: post.metadata.title,
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
-            description: post.metadata.description,
+            summary: post.metadata.summary,
             author: {
               "@type": "Person",
               name: "Your Name",
@@ -74,13 +76,14 @@ export default function Writing({ params }) {
           }),
         }}
       />
-      <h1 className="font-bold text-3xl font-serif mb-2">
-        {post.metadata.title}
-      </h1>
-      <div className="text-sm text-gray-600 mb-8">
+      <h1 className="text-3xl font-medium mb-2">{post.metadata.title}</h1>
+      <div className="text-sm text-gray-600 mb-4">
         {formatDate(post.metadata.publishedAt)}
       </div>
-      <article className="prose prose-gray">{post.content}</article>
+      <div className="text-sm text-gray-600 mb-4">{post.metadata.summary}</div>
+      <article className="prose prose-gray">
+        <CustomMDX source={post.content} />
+      </article>
     </section>
   );
 }

@@ -4,7 +4,7 @@ import path from "path";
 type Metadata = {
   title: string;
   publishedAt: string;
-  description: string;
+  summary: string;
   image?: string;
 };
 
@@ -81,6 +81,8 @@ export function formatDate(date: string, includeRelative = false) {
     day: "numeric",
     year: "numeric",
   });
+
+  fullDate = fullDate.replace(/^\w+/, (match) => match.toLowerCase());
 
   if (!includeRelative) {
     return fullDate;

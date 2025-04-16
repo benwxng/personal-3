@@ -1,4 +1,5 @@
 import AnimatedLink from "./AnimatedLink";
+import { AnimatedNav } from "./animated-section";
 
 const navItems = {
   "/": {
@@ -23,7 +24,8 @@ export function Navbar() {
                 <AnimatedLink
                   key={path}
                   href={path}
-                  className=" hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  external={false}
                 >
                   {name}
                 </AnimatedLink>
