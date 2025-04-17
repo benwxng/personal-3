@@ -1,8 +1,7 @@
 import { formatDate, getBlogPosts } from "app/writings/utils";
 import { notFound } from "next/navigation";
 import { CustomMDX } from "app/components/mdx";
-
-export const baseUrl = "https://portfolio-blog-starter.vercel.app";
+import { baseUrl } from "app/config";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();

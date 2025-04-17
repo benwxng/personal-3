@@ -1,7 +1,6 @@
 import { getBlogPosts } from "app/writings/utils";
 import { headers } from "next/headers";
-
-export const baseUrl = "https://portfolio-blog-starter.vercel.app";
+import { baseUrl } from "./config";
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
