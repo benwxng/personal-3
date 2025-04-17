@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     default: "ben wang",
     template: "%s | ben wang",
   },
-  description: "Welcome to my corner of the internet.",
+  description: "my personal site",
   icons: {
     icon: "/starfav.ico",
   },
   openGraph: {
     title: "ben wang",
-    description: "Welcome to my corner of the internet.",
+    description: "my personal site",
     url: baseUrl,
     siteName: "ben wang",
     locale: "en_US",
