@@ -1,8 +1,8 @@
 import { getBlogPosts } from "app/writings/utils";
+import { baseUrl } from "app/config";
 
 export async function GET() {
-  let allBlogs = await getBlogPosts();
-  const baseUrl = "https://portfolio-blog-starter.vercel.app";
+  const allBlogs = getBlogPosts();
 
   const itemsXml = allBlogs
     .map(
@@ -22,9 +22,9 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0">
       <channel>
-        <title>My Writings</title>
+        <title>ben wang</title>
         <link>${baseUrl}</link>
-        <description>My latest writings</description>
+        <description>Welcome to my corner of the internet.</description>
         ${itemsXml}
       </channel>
     </rss>`;
