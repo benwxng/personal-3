@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ben wang",
     description: "my personal site",
+    images: [`${baseUrl}/opengraph-image.jsx`],
   },
   robots: {
     index: true,
