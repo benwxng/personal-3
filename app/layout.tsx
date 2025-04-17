@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     template: "%s | ben wang",
   },
   description: "Welcome to my corner of the internet.",
+  icons: {
+    icon: "/starfav.ico",
+  },
   openGraph: {
     title: "ben wang",
     description: "Welcome to my corner of the internet.",
