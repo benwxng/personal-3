@@ -25,20 +25,11 @@ export const metadata: Metadata = {
     siteName: "ben wang",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/personalOGimage.png",
-        width: 1200,
-        height: 630,
-        alt: "ben wang",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ben wang",
     description: "my personal site",
-    images: ["/personalOGimage.png"],
   },
   robots: {
     index: true,
@@ -69,9 +60,6 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <head>
-        <meta property="og:image" content="/personalOGimage.png" />
-      </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />

@@ -31,20 +31,11 @@ export async function generateMetadata({ params }) {
       type: "article",
       publishedTime,
       url: `${baseUrl}/writings/${post.slug}`,
-      images: [
-        {
-          url: "/personalOGimage.png",
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: ["/personalOGimage.png"],
     },
   };
 }
