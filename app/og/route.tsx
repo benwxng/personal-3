@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
-import { baseUrl } from "app/config";
 
 export function GET(request: Request) {
-  // Redirect to the static personalOGimage.png with absolute URL
-  return NextResponse.redirect(`${baseUrl}/personalOGimage.png`);
+  // Redirect to the static personalOGimage.png with hardcoded URL
+  return NextResponse.redirect(
+    "https://personal-3.vercel.app/personalOGimage.png"
+  );
 }

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${baseUrl}/personalOGimage.png`,
+        url: "https://personal-3.vercel.app/personalOGimage.png",
         width: 1200,
         height: 630,
         alt: "ben wang",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ben wang",
     description: "my personal site",
-    images: [`${baseUrl}/personalOGimage.png`],
+    images: ["https://personal-3.vercel.app/personalOGimage.png"],
   },
   robots: {
     index: true,

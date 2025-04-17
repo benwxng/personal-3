@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
       url: `${baseUrl}/writings/${post.slug}`,
       images: [
         {
-          url: `${baseUrl}/personalOGimage.png`,
+          url: "https://personal-3.vercel.app/personalOGimage.png",
           width: 1200,
           height: 630,
           alt: title,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: [`${baseUrl}/personalOGimage.png`],
+      images: ["https://personal-3.vercel.app/personalOGimage.png"],
     },
   };
 }
