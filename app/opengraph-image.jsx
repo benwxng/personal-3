@@ -20,6 +20,7 @@ export default function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           color: 'white',
+          letterSpacing: '-0.05em',
         }}
       >
         ben wang
