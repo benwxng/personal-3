@@ -8,6 +8,13 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import ConditionalFooter from "./components/conditional-footer";
 import { baseUrl } from "./config";
 
+const fs = require("fs").promises;
+
+const loadLocalImage = async () => {
+  const imageData = await fs.readFile("/personalOGimage.png");
+  // Process image data
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
