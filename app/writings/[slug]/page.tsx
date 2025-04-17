@@ -21,7 +21,6 @@ export async function generateMetadata({ params }) {
 
   let { title, publishedAt: publishedTime, summary } = post.metadata;
   let description = summary;
-  let ogImage = `${baseUrl}/writings/${post.slug}/og`;
 
   return {
     title,
@@ -34,7 +33,10 @@ export async function generateMetadata({ params }) {
       url: `${baseUrl}/writings/${post.slug}`,
       images: [
         {
-          url: ogImage,
+          url: "/personalOGimage.png",
+          width: 1200,
+          height: 630,
+          alt: title,
         },
       ],
     },
@@ -42,7 +44,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage],
+      images: ["/personalOGimage.png"],
     },
   };
 }

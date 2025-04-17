@@ -25,6 +25,14 @@ export const metadata: Metadata = {
     siteName: "ben wang",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/personalOGimage.png",
+        width: 1200,
+        height: 630,
+        alt: "ben wang",
+      },
+    ],
   },
   robots: {
     index: true,

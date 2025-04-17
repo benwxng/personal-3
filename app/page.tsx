@@ -9,7 +9,7 @@ export default function Page() {
       <AnimatedContent>
         <h2 className="text-lg font-medium mb-2">currently</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
-          <li>cs + math / tennis @ swarthmore</li>
+          <li>cs + math @ swarthmore</li>
           <li>campus growth @ perplexity</li>
           <li>
             building @{" "}
