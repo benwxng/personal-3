@@ -1,3 +1,2 @@
 // Site configuration constants
-export const baseUrl =
-  "personal-site-april25-git-main-benwxngs-projects.vercel.app";
+export const baseUrl = "http://www.benwang.xyz";
