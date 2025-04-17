@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
+import { baseUrl } from "app/config";
 
 export function GET(request: Request) {
-  // Redirect to the static personalOGimage.png instead of generating a dynamic image
-  return NextResponse.redirect(new URL("/personalOGimage.png", request.url));
+  // Redirect to the static personalOGimage.png with absolute URL
+  return NextResponse.redirect(`${baseUrl}/personalOGimage.png`);
 }

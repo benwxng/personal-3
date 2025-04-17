@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
       url: `${baseUrl}/writings/${post.slug}`,
       images: [
         {
-          url: "/personalOGimage.png",
+          url: `${baseUrl}/personalOGimage.png`,
           width: 1200,
           height: 630,
           alt: title,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: ["/personalOGimage.png"],
+      images: [`${baseUrl}/personalOGimage.png`],
     },
   };
 }
@@ -71,7 +71,7 @@ export default function Writing({ params }) {
             summary: post.metadata.summary,
             author: {
               "@type": "Person",
-              name: "Your Name",
+              name: "Ben Wang",
             },
             url: `${baseUrl}/writings/${post.slug}`,
           }),
