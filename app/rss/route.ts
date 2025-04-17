@@ -24,7 +24,7 @@ export async function GET() {
       <channel>
         <title>ben wang</title>
         <link>${baseUrl}</link>
-        <description>Welcome to my corner of the internet.</description>
+        <description>my personal site</description>
         ${itemsXml}
       </channel>
     </rss>`;
