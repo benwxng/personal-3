@@ -31,7 +31,7 @@ export default function Page() {
             growth ops @{" "}
             <AnimatedLink
               href="https://whop.com/discover/kaizen-trading/"
-              className="text-neutral-600 dark:text-neutral-400"
+              className="text-neutral-600 dark:text-white/70"
               external={true}
             >
               kaizen
