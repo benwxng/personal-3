@@ -39,7 +39,7 @@ export default function Page() {
             </AnimatedLink>{" "}
           </li>
           <li>sneaker botting</li>
-          <li>#1 tennis player in maryland</li>
+          <li>4 star tennis recruit</li>
         </ul>
 
         <div className="mt-8">
