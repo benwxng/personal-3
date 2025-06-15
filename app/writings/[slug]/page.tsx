@@ -73,7 +73,7 @@ export default function Writing({ params }) {
         {formatDate(post.metadata.publishedAt)}
       </div>
       <div className="text-sm text-gray-600 mb-4">{post.metadata.summary}</div>
-      <article className="prose prose-gray">
+      <article className="prose prose-gray mb-28">
         <CustomMDX source={post.content} />
       </article>
     </section>
