@@ -10,7 +10,16 @@ export default function Page() {
         <h2 className="text-lg font-medium mb-2">currently</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>cs + math @ swarthmore</li>
-          <li>entrepreneur in residence @ chord ventures</li>
+          <li>
+            building ai shortform @{" "}
+            <AnimatedLink
+              href="https://f.inc/"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              founders, inc.
+            </AnimatedLink>
+          </li>
           <li>
             building community @{" "}
             <AnimatedLink
