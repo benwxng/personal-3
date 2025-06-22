@@ -18,7 +18,7 @@ export default function Page() {
               external={true}
             >
               saba
-            </AnimatedLink>
+            </AnimatedLink>{" "}
             @{" "}
             <AnimatedLink
               href="https://f.inc/"
