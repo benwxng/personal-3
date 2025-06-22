@@ -11,7 +11,15 @@ export default function Page() {
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>cs + math @ swarthmore</li>
           <li>
-            building ai shortform @{" "}
+            building{" "}
+            <AnimatedLink
+              href="https://usesaba.com"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              saba
+            </AnimatedLink>
+            @{" "}
             <AnimatedLink
               href="https://f.inc/"
               className="text-neutral-600 dark:text-white/70"
@@ -21,7 +29,7 @@ export default function Page() {
             </AnimatedLink>
           </li>
           <li>
-            building community @{" "}
+            community @{" "}
             <AnimatedLink
               href="https://www.swatsynthesis.info"
               className="text-neutral-600 dark:text-white/70"
