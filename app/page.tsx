@@ -5,8 +5,11 @@ import AnimatedLink from "./components/AnimatedLink";
 export default function Page() {
   return (
     <section>
-      <h1 className="font-semibold text-2xl mb-8 tracking-tight">ben wang</h1>
+      <h1 className="font-semibold text-2xl mb-2 tracking-tight">ben wang</h1>
       <AnimatedContent>
+        <p className="mb-4 text-neutral-600 dark:text-neutral-400">
+          trying to be better than yesterday
+        </p>
         <h2 className="text-lg font-medium mb-2">currently</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>cs + math @ swarthmore</li>
