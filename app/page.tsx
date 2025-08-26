@@ -14,24 +14,6 @@ export default function Page() {
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>cs + math @ swarthmore</li>
           <li>
-            building{" "}
-            <AnimatedLink
-              href="https://usesaba.com"
-              className="text-neutral-600 dark:text-white/70"
-              external={true}
-            >
-              saba
-            </AnimatedLink>{" "}
-            @{" "}
-            <AnimatedLink
-              href="https://f.inc/"
-              className="text-neutral-600 dark:text-white/70"
-              external={true}
-            >
-              founders, inc.
-            </AnimatedLink>
-          </li>
-          <li>
             community @{" "}
             <AnimatedLink
               href="https://www.swatsynthesis.info"
@@ -47,7 +29,25 @@ export default function Page() {
 
         <h2 className="text-lg font-medium mb-2">past adventures</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
-          <li>campus growth @ perplexity</li>
+          <li>
+            <AnimatedLink
+              href="https://f.inc/"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              founders, inc.
+            </AnimatedLink>
+          </li>
+          <li>
+            @{" "}
+            <AnimatedLink
+              href="https://perplexity.ai"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              perplexity
+            </AnimatedLink>
+          </li>
           <li>
             growth ops @{" "}
             <AnimatedLink
