@@ -30,7 +30,7 @@
 }
 html,
 body {
-  cursor: url('public/assets/customCursor.svg') 8 8, auto;
+  cursor: url('/assets/customCursor.svg') 8 8, auto !important;
 }
 
 /* Custom cursor for clickable elements */
@@ -40,7 +40,12 @@ button,
 input[type='submit'],
 input[type='button'],
 input[type='reset'] {
-  cursor: url('public/assets/customCursor.svg') 8 8, auto !important;
+  cursor: url('/assets/customCursor.svg') 8 8, auto !important;
+}
+
+/* Ensure custom cursor persists after page load */
+* {
+  cursor: inherit;
 }
 html {
   min-width: 360px;
@@ -53,7 +58,7 @@ html {
   padding-right: 0.5em;
   width: 80%;
   max-width: 700px;
-  cursor: pointer;
+  cursor: url('/assets/customCursor.svg') 8 8, pointer;
 }
 
 .anchor:hover {
