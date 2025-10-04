@@ -12,7 +12,7 @@ export default function Page() {
         </p>
         <h2 className="text-lg font-medium mb-2">currently</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
-          <li>cs + math @ swarthmore</li>
+          <li>cs, math, phil @ swarthmore</li>
           <li>
             community @{" "}
             <AnimatedLink
@@ -30,6 +30,14 @@ export default function Page() {
         <h2 className="text-lg font-medium mb-2">past adventures</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>
+            <AnimatedLink
+              href="https://usesaba.com/"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              ai shorts
+            </AnimatedLink>{" "}
+            @{" "}
             <AnimatedLink
               href="https://f.inc/"
               className="text-neutral-600 dark:text-white/70"
