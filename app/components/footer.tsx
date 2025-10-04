@@ -50,7 +50,6 @@ export default function Footer() {
             email
           </AnimatedLink>
         </li>
-        <li>王</li>
       </ul>
     </AnimatedFooter>
   );
