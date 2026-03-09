@@ -6,6 +6,7 @@ export default function Page() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-2 tracking-tight">ben wang</h1>
+      
       <AnimatedContent>
         <p className="mb-4 text-neutral-600 dark:text-neutral-400">
           trying to be better than yesterday
@@ -29,16 +30,7 @@ export default function Page() {
 
         <h2 className="text-lg font-medium mb-2">past adventures</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
-          <li>
-            community @{" "}
-            <AnimatedLink
-              href="https://www.swatsynthesis.info"
-              className="text-neutral-600 dark:text-white/70"
-              external={true}
-            >
-              synthesis
-            </AnimatedLink>
-          </li>
+          
           <li>
             <AnimatedLink
               href="https://usesaba.com/"
@@ -54,6 +46,16 @@ export default function Page() {
               external={true}
             >
               founders, inc.
+            </AnimatedLink>
+          </li>
+          <li>
+            community @{" "}
+            <AnimatedLink
+              href="https://www.swatsynthesis.info"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              synthesis
             </AnimatedLink>
           </li>
           <li>
