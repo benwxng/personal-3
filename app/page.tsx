@@ -12,7 +12,23 @@ export default function Page() {
         </p>
         <h2 className="text-lg font-medium mb-2">currently</h2>
         <ul className="list-none text-neutral-600 dark:text-neutral-400">
-          <li>cs, math, phil @ swarthmore</li>
+        <li>
+            product + design @{" "}
+            <AnimatedLink
+              href="https://www.10x.app"
+              className="text-neutral-600 dark:text-white/70"
+              external={true}
+            >
+              10X
+            </AnimatedLink>
+          </li>
+          <li>on leave @ swarthmore</li>
+        </ul>
+
+        <br />
+
+        <h2 className="text-lg font-medium mb-2">past adventures</h2>
+        <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>
             community @{" "}
             <AnimatedLink
@@ -23,12 +39,6 @@ export default function Page() {
               synthesis
             </AnimatedLink>
           </li>
-        </ul>
-
-        <br />
-
-        <h2 className="text-lg font-medium mb-2">past adventures</h2>
-        <ul className="list-none text-neutral-600 dark:text-neutral-400">
           <li>
             <AnimatedLink
               href="https://usesaba.com/"
