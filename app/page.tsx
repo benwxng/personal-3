@@ -23,7 +23,7 @@ export default function Page() {
               10X
             </AnimatedLink>
           </li>
-          <li>on leave @ swarthmore</li>
+          <li>on leave from swarthmore</li>
         </ul>
 
         <br />
