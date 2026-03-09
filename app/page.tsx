@@ -71,7 +71,7 @@ export default function Page() {
           <li>
             growth ops @{" "}
             <AnimatedLink
-              href="https://whop.com/discover/kaizen-trading/"
+              href="https://www.kaizen.gg/"
               className="text-neutral-600 dark:text-white/70"
               external={true}
             >
