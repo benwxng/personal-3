@@ -16,7 +16,7 @@ export default function Page() {
         <li>
             product + design @{" "}
             <AnimatedLink
-              href="https://www.10x.app"
+              href="https://www.10x.so"
               className="text-neutral-600 dark:text-white/70"
               external={true}
             >
