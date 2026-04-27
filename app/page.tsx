@@ -59,16 +59,6 @@ export default function Page() {
             </AnimatedLink>
           </li>
           <li>
-            campus growth @{" "}
-            <AnimatedLink
-              href="https://perplexity.ai"
-              className="text-neutral-600 dark:text-white/70"
-              external={true}
-            >
-              perplexity
-            </AnimatedLink>
-          </li>
-          <li>
             growth ops @{" "}
             <AnimatedLink
               href="https://www.kaizen.gg/"
